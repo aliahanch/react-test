@@ -1,22 +1,27 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import logo from "../logo.svg";
-// import stayled from "styled-components";
 
 class Navbar extends Component {
     render() {
         return (
-           <nav className="navbar bg-dark navbar-expand-sm navbar-dark px-sm-5">
+           <nav className="navbar navbar-dark bg-primary">
                <Link className="navbar-brand" to="/">
                    <img alt="s" src={logo} className="navbar-brand" />
                </Link>
-               <ul className="navbar-nav align-items-center">
-                   <li className="nav-item ml-5">
+               <div className="collapse navbar-collapse" id="navbarText">
+               <ul className="navbar-nav mr-auto">
+                   <li className="nav-item ">
                        <Link to="/" className="nav-link">
                            محصولات
                        </Link>
+                   </li><li className="nav-item ">
+                       <Link to="/" className="nav-link">
+                           درباره ما
+                       </Link>
                    </li>
                </ul>
+               </div>
                <Link to="/cart" className="ml-auto">
                    <button  type="button" className="btn btn-success">
                        <span className="mr-2">

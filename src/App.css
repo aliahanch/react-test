@@ -28,6 +28,8 @@ text-bright {
 
 .text-ss{
   direction: rtl;
+  text-align: justify;
+
 }
 
 .dir-rtl{
@@ -39,8 +41,15 @@ text-bright {
   height: auto;
 }
 
+.nav-response{
+  margin-left: 5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .text-ss {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  .nav-response{
+    margin-left: 1rem;
   }
 }

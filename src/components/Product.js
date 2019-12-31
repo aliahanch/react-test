@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import {ProductConsumer} from "../context";
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 
 class Product extends Component {
@@ -56,13 +56,13 @@ class Product extends Component {
                             <p className=" ">
                                 {title}
                             </p>
-                            <p >
+                            <div >
                                 <h5 className= "text-ss text-md-right text-blue  ">
 
                                     {price*10000}
                                     <span className="mr-1 ">تومان</span>
                                 </h5>
-                            </p>
+                            </div>
                         </div>
                 </div>
             </ProWrap>
@@ -70,15 +70,15 @@ class Product extends Component {
     }
 }
 
-Product.propTypes = {
-    Product:PropTypes.shape({
-        id:PropTypes.number,
-        img:PropTypes.string,
-        title:PropTypes.string,
-        price:PropTypes.number,
-        inCard:PropTypes.bool
-    }).isRequired
-};
+// Product.propTypes = {
+//     Product:PropTypes.shape({
+//         id:PropTypes.number,
+//         img:PropTypes.string,
+//         title:PropTypes.string,
+//         price:PropTypes.number,
+//         inCard:PropTypes.bool
+//     }).isRequired
+// };
 
 export default Product;
 

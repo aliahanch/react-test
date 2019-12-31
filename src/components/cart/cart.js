@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Title from "../Title";
 import {ProductConsumer} from "../../context";
-import Product from "../Product";
 import CartCol from "./cartCol";
 import Empty from "./empty";
 import CartList from "./cartList";
